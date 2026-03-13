@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>極致貪食蛇 | Premium Snake Game</title>
+    <meta name="description" content="一個現代化、流暢且美觀的貪食蛇遊戲，具有極致的視覺體驗。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <main class="game-container">
+        <header>
+            <h1>極致貪食蛇</h1>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="label">得分</span>
+                    <span id="score" class="value">000</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">最高紀錄</span>
+                    <span id="high-score" class="value">000</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas"></canvas>
+            <div id="overlay" class="overlay hidden">
+                <div class="overlay-content">
+                    <h2 id="overlay-text">遊戲結束</h2>
+                    <button id="restart-btn">重新開始</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-info">
+            <p>使用 <span class="key">WASD</span> 或 <span class="key">方向鍵</span> 來控制蛇的方向</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Premium Snake. Made with ❤️</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
